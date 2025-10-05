@@ -1,0 +1,18 @@
+<Project Sdk="Microsoft.NET.Sdk.Worker">
+
+  <PropertyGroup>
+    <TargetFramework>net10.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <UserSecretsId>dotnet-Inventory.StreamProcessor-8e1da3b1-ed18-4d93-8ad9-87d9361d7bb1</UserSecretsId>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.Extensions.Hosting" Version="10.0.0-rc.1.25451.107" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\StreamSync.Contracts\StreamSync.Contracts.csproj" />
+    <ProjectReference Include="..\StreamSync.Infrastructure\StreamSync.Infrastructure.csproj" />
+  </ItemGroup>
+</Project>

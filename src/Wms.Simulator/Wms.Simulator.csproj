@@ -1,0 +1,18 @@
+<Project Sdk="Microsoft.NET.Sdk.Worker">
+
+  <PropertyGroup>
+    <TargetFramework>net10.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <UserSecretsId>dotnet-Wms.Simulator-4f41d24d-7738-4f4e-b331-51cf83e7bbbe</UserSecretsId>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.Extensions.Hosting" Version="10.0.0-rc.1.25451.107" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\StreamSync.Contracts\StreamSync.Contracts.csproj" />
+    <ProjectReference Include="..\StreamSync.Infrastructure\StreamSync.Infrastructure.csproj" />
+  </ItemGroup>
+</Project>
